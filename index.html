@@ -11,25 +11,34 @@
 
         <header>
             Hi! My name is Nada, and this is my journal! <br>
-            Fun fact: this header is inside a div tag.
         </header>
 
         <main>
 
             <h1>
-                Welcome to Nada's wonderful, fantastic journal.
+                Welcome to Nada's life
             </h1>
             <hr>
             <section>
                 <h2>April 8th</h2>
                     <p>
-                    On april 8th, I got new ear piercings! I went with 2 of my friends/neighbors. Their names are Nour and Menna. We were arguing about who will get pierced first because we were all lowkey scared of getting pierced with a needle. Anyway... here's the order of who got pierced first:
+                        On april 8th, I got new ear piercings! I went with 2 of my friends/neighbors. Their names are Nour and Menna. We were arguing about who will get pierced first because we were all lowkey scared of getting pierced with a needle. Anyway... here's the order of who got pierced first:
+                    </p>
                     <ol>
                         <li>Nour</li>
                         <li>Menna</li>
                         <li>Nada (me)</li>
                     </ol>
-                    </p>
+                    <p>Here's some ear piercing inspo: </p>
+                    <div class="gridding">
+                        <div><img src="images/1.jpg"  width=40></div>
+                        <div><img src="images/2.jpg"  width=40></div>
+                        <div><img src="images/3.jpg"  width=40></div>  
+                        <div><img src="images/4.jpg"  width=40></div>
+                        <div><img src="images/5.jpg" width=40></div>
+                        <div><img src="images/6.jpg"  width=40></div>  
+                        <div><img src="images/7.jpg" width=40></div>
+                    </div>
             </section>
             <hr>
 
@@ -39,7 +48,7 @@
                     On April 10th, I visited my best friend's house, surprised her for her birthday, and then we decided to put up some Ramadan (a muslim holy month in the year) decorations!
                     Here is what the typical ramadan kind of print typically look like in Egypt: <br> <br>
                     <img src="ramadan.jpg" alt="ramadan decorations" width=200> <br><br>
-                    As you can see, there's a lot of <span style="color:red">red</span> and some <span style="color:blue">blue</span>.
+                    As you can see, there's a lot of <span style="color:red; display:inline;">red</span> and some <span style="color:blue; display:inline;">blue</span><span style="color:green; display:none;">, and green</span>.
                     <br> <br>
                     Here is also music that we correlate with ramadan. <br><br>
                     <audio controls>
@@ -53,7 +62,17 @@
             <section>
                 <h2>April 11th</h2>
                 <p>
-                    On April 11th, I started doing this lab because I procrastinated it. :/ Here is me learning the difference between <b>b</b>, <strong>strong</strong>, <i>i</i>, and <em>em</em>. This day is also the last night before Ramadan, and usually our sleeping schedules get flipped in ramadan, so we stayed up until 4 AM just to warm up for the month LOL.
+                    On April 11th, I started doing this lab because I procrastinated it. :/ Here is me learning the difference between <b>b</b>, <strong>strong</strong>, <i>i</i>, and <em>em</em>. This day is also the last night before Ramadan, and usually our sleeping schedules get flipped in ramadan, so we stayed up until 4 AM just to warm up for the month LOL. The most exciting this is I received some laptop stickers that I ordered earlier! Here are pictures of them:
+                    <div class="flexing">
+                        <div><img src="images/one.png"  width=40></div>
+                        <div><img src="images/two.png"  width=40></div>
+                        <div><img src="images/three.png"  width=40></div>  
+                        <div><img src="images/four.png"  width=40></div>
+                        <div><img src="images/five.png" width=40></div>
+                        <div><img src="images/six.png"  width=40></div>  
+                        <div><img src="images/seven.png" width=40></div>
+                    </div>
+                      
             
                 </p>
             </section>
@@ -62,7 +81,7 @@
             <section>
                 <h2>April 12th</h2>
                 <p>
-                    That day my friend (whose birthday was that day) and I went to eat brunch with a really nice view! That was the last day before we start fasting for the following month, so that was our last breakfast for quite a while. That's because in Ramadan, Muslims don't eat between ~4 AM and 6 PM (not even water :p). 
+                    On April 12th, my friend (whose birthday was that day) and I went to eat brunch with a really nice view! That was the last day before we start fasting for the following month, so that was our last breakfast for quite a while. That's because in Ramadan, Muslims don't eat between ~4 AM and 6 PM (not even water :p). 
                     Here is a glimpse from our breakfast and view:
                     <br><br>
                     <video width="200" controls>
@@ -76,11 +95,12 @@
 
         </main>
         <h2 style="padding: 50px;">Other</h2>
+        <div>
         <section>
         <details>
-            <summary>hit me up</summary>
+            <summary>HMU!</summary>
             <nav>
-                <ul>
+                <ul style=>
                     <li><a href="https://github.com/nadagehad01">My github page.</a></li>
                     <li><a href="https://www.instagram.com/nadagehad01">My instagram account.</a></li>
                     <li><a href="https://www.facebook.com/nadagehad01">My facebook account.</a></li>
@@ -93,43 +113,75 @@
 
         
         <section>
-        <p>
-            do it yourself!
-            <form action="/action_page.php" method="get">
-                <input type="checkbox" name="mood" value="happy">
-                <!-- <label for="mood"> check if you're happy</label><br> -->
-                <input type="radio" id="satisfied" name="satisfied" value="satisfied">
-                <label for="satisfied">satisfied</label><br>
-                <!-- <label for="date">date of entry:</label> -->
-                <input type="date" id="entry" name="entry"><br>
-                <label for="favorite">favorite person interacted with today:</label><br>
-                <input type="text" id="favorite" name="favorite"><br>
-                <fieldset>
-                    <!-- <label for="vent">vent here:</label> -->
-                    <input type="text" id="fname" name="fname"><br><br>
-                </fieldset>
+        <p>DIY journal entry</p>
+
+            <form action="/action_page.php">
+                <input type="date" id="date" name="date">
+                <input type="submit"><br><br>
+
+                <p>Which of these emotions are you feeling?</p>
+                <input type="radio" id="Happiness" name="feeling" value="Happiness">
+                <label for="Happiness">Happiness</label><br>
+                <input type="radio" id="Sadness" name="feeling" value="Sadness">
+                <label for="Sadness">Sadness</label><br>
+                <input type="radio" id="Anger" name="feeling" value="Anger">
+                <label for="Anger">Anger</label><br>
+                <input type="radio" id="Anticipation" name="feeling" value="Anticipation">
+                <label for="Anticipation">Anticipation</label><br>
+                <input type="radio" id="Fear" name="feeling" value="Fear">
+                <label for="Fear">Fear</label><br>
+                <input type="radio" id="Loneliness" name="feeling" value="Loneliness">
+                <label for="Loneliness">Loneliness</label><br>
+                <input type="radio" id="Jealousy" name="feeling" value="Jealousy">
+                <label for="Jealousy">Jealousy</label><br>
+                <input type="radio" id="Disgust" name="feeling" value="Disgust">
+                <label for="Disgust">Disgust</label><br>
+                <input type="radio" id="Surprise" name="feeling" value="Surprise">
+                <label for="Surprise">Surprise</label><br>
+                <input type="radio" id="Trust" name="feeling" value="Trust">
+                <label for="Trust">Trust</label><br><br>
+                <input type="submit" value="Submit">
+
+                <p>What did you achieve today?</p>
+                <input type="checkbox" id="goal1" name="goal1" value="drink">
+                <label for="goal1"> Drink water</label><br>
+                <input type="checkbox" id="goal2" name="goal2" value="walk">
+                <label for="goal2"> Take a walk</label><br>
+                <input type="checkbox" id="goal3" name="goal3" value="pray">
+                <label for="goal3"> Prayed or meditated</label><br>
+                <input type="checkbox" id="goal4" name="goal4" value="learn">
+                <label for="goal4"> Learned something new</label><br>
+                <input type="checkbox" id="goal5" name="goal5" value="finished">
+                <label for="goal5"> Finished all the work</label><br><br>
+
+                <label for="fname">What is one thing that you're grateful for today?</label><br>
+                <input type="text" id="grateful" name="grateful" ><br><br>
+
+            
+                <label for="w3review">Notes:</label><br>
+                <textarea id="Notes" name="Notes" rows="4" cols="50">
+                </textarea>
+                <br><br>
+
+                <button type="button" onclick="alert('You’re off to great places, if today wasn\'t your day, tomorrow will be.')"> Click me! There's a message for you.</button><br><br>
+
+                <label for="tomorrow">Choose a main goal for tomorrow: </label>
+                <select name="tomorrow" id="tomorrow">
+                    <option value="drink">Relax</option>
+                    <option value="drink">Drink water</option>
+                    <option value="walk">Take a walk</option>
+                    <option value="pray">Pray or meditate</option>
+                    <option value="learn">Learn something new</option>
+                </select>
+                <br><br>
+
+
+            <input type="submit" value="Submit">
             </form>
-            <!-- <label for="journal">add what you think is the purpose of journaling</label><br> -->
-            <textarea id="wisdom" name="wisdom" rows="4" cols="50">
-            Journaling helps control your symptoms and improve your mood by: Helping you prioritize problems, fears, and concerns. Tracking any symptoms day-to-day so that you can recognize triggers and learn ways to better control them.
-            </textarea><br>
-            <button type="button">click me for NOTHING!</button>
-            <br>
-            <label for="journaling">choose your preferred journaling method</label><br>
-            <select id="journaling">
-                <option value="handwritten on paper">handwritten on paper</option>
-                <option value="digitally handwritten">digitally handwritten</option>
-                <option value="typed">typed</option>
-            </select>
-            <br>
-            <!-- <label for="journal">choose your favorite paper journal type</label><br> -->
-            <input list="typess" name="journal types" id="types">
-            <datalist id="typess">
-                <option value="hardcover">
-                <option value="paperback">
-            </datalist>
+            
         </section>
 
+        </div>
         <br><br>
 
 

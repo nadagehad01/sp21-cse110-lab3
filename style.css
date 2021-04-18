@@ -1,10 +1,27 @@
+@font-face {
+    font-family: "gugi";
+    src: url(gugi.ttf);
+}
+
+body {
+    background-color: white;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    body {
+      background-color: rgb(208, 218, 250);
+    }
+}
+
 h1 { /* just for the title that says welcome to nada's journal */
     color: rgb(255, 113, 97);
+    position: sticky;
     padding: 30px;
     text-align: center;
     background: linear-gradient(to bottom, hsl(33, 100%, 88%) 0%, rgb(207, 218, 252) 100%); /* gradient block background to the title */
-    font-family: "Lucida Handwriting", cursive;
-    font-size: 40px;
+    font-family: gugi, sans-serif;
+    letter-spacing: 7px;
+    font-size: 45px;
 }
 h2 {
     text-decoration: underline;
@@ -20,6 +37,8 @@ hr {
     border: none; /* removes the automatic black border of horizontal lines */
 }
 p {
+    max-height: 1000px;
+    width: 500px;
     font-family: Helvetica, sans-serif; /* because the automatic serifs font is absolutely not journal-y style*/
     line-height: 25px;
     margin-top: 50px;
@@ -38,7 +57,8 @@ ul { /* making the list less relevant than the surrounding text */
     line-height: 1.25em;
 }
 section { /* putting every section in a box... looks cool */
-    width: 500px;
+    max-width: 500px;
+    position: relative;
     padding: 50px;
     border-style: dotted;
     border-color: bisque;
@@ -46,3 +66,37 @@ section { /* putting every section in a box... looks cool */
     border-radius: 50px 20px;
 
 }
+div {
+    font-family: Helvetica, sans-serif;
+}
+
+a:visited {
+    color: green;
+}
+a:hover {
+    color: red;
+}
+  
+a:active {
+    color: blue;
+}
+
+.flexing {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(208, 218, 250);
+}
+  
+.flexing > div {
+    background-color: #ffe3c2 0%;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+}
+
+.gridding {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(208, 218, 250);
+    padding: 5px;
+  }
