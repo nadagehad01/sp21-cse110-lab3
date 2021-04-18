@@ -1,0 +1,48 @@
+h1 { /* just for the title that says welcome to nada's journal */
+    color: rgb(255, 113, 97);
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, hsl(33, 100%, 88%) 0%, rgb(207, 218, 252) 100%); /* gradient block background to the title */
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 40px;
+}
+h2 {
+    text-decoration: underline;
+    text-decoration-color: rgb(207, 218, 252);
+    text-decoration-style: wavy; /* underlining dates of journal entries */
+    margin: auto;
+    font-family: Verdana, sans-serif;
+    color: #FF7161;
+}
+hr {
+    height: 3px;
+    background-color: rgb(128, 155, 247);
+    border: none; /* removes the automatic black border of horizontal lines */
+}
+p {
+    font-family: Helvetica, sans-serif; /* because the automatic serifs font is absolutely not journal-y style*/
+    line-height: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+ol { /* making the list less relevant than the surrounding text */
+    margin: 10 10 20 20;
+    font-size: 95%;
+    line-height: 1.25em;
+}
+ul { /* making the list less relevant than the surrounding text */
+    margin: 10 10 20 20;
+    font-size: 0.85rem;
+    line-height: 1.25em;
+}
+section { /* putting every section in a box... looks cool */
+    width: 500px;
+    padding: 50px;
+    border-style: dotted;
+    border-color: bisque;
+    border-width: 0.2cm;
+    border-radius: 50px 20px;
+
+}
