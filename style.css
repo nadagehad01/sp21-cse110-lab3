@@ -3,6 +3,9 @@
     src: url(gugi.ttf);
 }
 
+* {
+    font-family: Helvetica, sans-serif;
+}
 body {
     background-color: white;
   }
@@ -66,9 +69,6 @@ section { /* putting every section in a box... looks cool */
     border-radius: 50px 20px;
 
 }
-div {
-    font-family: Helvetica, sans-serif;
-}
 
 a:visited {
     color: green;
@@ -81,7 +81,7 @@ a:active {
     color: blue;
 }
 
-.flexing {
+div.flexing {
     display: flex;
     flex-wrap: nowrap;
     background-color: rgb(208, 218, 250);
@@ -99,4 +99,17 @@ a:active {
     grid-template-columns: auto auto auto;
     background-color: rgb(208, 218, 250);
     padding: 5px;
-  }
+}
+
+
+#other, label[for] {
+    color: rgb(54, 82, 173);
+}
+
+form input {
+    color: #FF7161;
+}
+
+div ~ p, div + p {
+    color: black;
+}
